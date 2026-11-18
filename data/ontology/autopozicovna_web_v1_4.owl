@@ -1,0 +1,1418 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:base="http://www.semanticweb.org/autopozicovna/ontologies/2026/8/autopozicovna" ontologyIRI="http://www.semanticweb.org/autopozicovna/ontologies/2026/8/autopozicovna" versionIRI="http://www.semanticweb.org/autopozicovna/ontologies/2026/8/autopozicovna/v1.4">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="sk">Školská ontológia autopožičovne podľa dodaného vzoru: 36 tried, 10 objektových a 2 dátové vlastnosti; 16 fiktívnych jedincov. Modeluje autá, zákazníkov, prenájmy a pobočky. Všetky príklady a ceny sú fiktívne. dennaCena je denná sadzba v EUR; pocetDni je kladný celý počet dní. patriPobocke je spravujúca pobočka, nie aktuálna poloha vozidla. Číselné kategórie používajú only s priamymi číselnými intervalmi. Auto a Prenajom vyžadujú aspoň jednu hodnotu svojej funkčnej dátovej vlastnosti. Tým sa zachováva pôvodná klasifikácia, povinná nezáporná cena aj kladný počet dní. Pomocné vlastné dátové typy boli nahradené ich definíciami. V desktopovom Protégé spustite reasoner na odvodenie kategórií a inverzných vzťahov. Úplné číselné pravidlá sú dostupné v OWL opise tried; jednoduchý formulár WebProtégé zobrazuje iba časť podporovaných OWL výrazov.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal xml:lang="sk">Autopožičovňa</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>1.4 – WebProtégé: only a povinná hodnota namiesto vlastných dátových typov</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Auto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BMWRad3Sedan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BratislavskaLetiskovaPobocka"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BratislavskaMestskaPobocka"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DlhodobyPrenajom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dodavka"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DvojdnovyPrenajom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EkonomickeAuto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FiremnyZakaznik"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FordTransitDodavka"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hatchback"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kombi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KosickaMestskaPobocka"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KratkodobyPrenajom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LetiskovaPobocka"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LuxusneAuto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MercedesBenzTriedaS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MestskaPobocka"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Minibus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OsobneAuto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pobocka"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PremioveAuto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prenajom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrenajomOsobnehoAuta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrenajomUzitkovehoAuta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SUV"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sedan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SkodaFabia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SkodaOctaviaCombi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SportoveAuto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StrednaTrieda"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StrednodobyPrenajom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SukromnyZakaznik"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UzitkoveAuto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VolkswagenGolf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Zakaznik"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#jeMiestoVratenia"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#jeMiestoVyzdvihnutia"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#jePrenajateV"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#maAuto"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#maPrenajom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#maZakaznika"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#patriPobocke"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#spravujeAuto"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#vratenieNa"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#vyzdvihnutieNa"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dennaCena"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pocetDni"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Auto_BMW3_01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Auto_Fabia_01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Auto_Golf_01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Auto_MercedesS_01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Auto_Octavia_01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Auto_Transit_01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EvaKovacova"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FirmaABC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JanNovak"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pobocka_BA_Centrum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pobocka_BA_Letisko"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pobocka_KE_Centrum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Prenajom_001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Prenajom_002"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Prenajom_003"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Prenajom_004"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#DlhodobyPrenajom"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Prenajom"/>
+            <DataAllValuesFrom>
+                <DataProperty IRI="#pocetDni"/>
+                <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DvojdnovyPrenajom"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Prenajom"/>
+            <DataHasValue>
+                <DataProperty IRI="#pocetDni"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EkonomickeAuto"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Auto"/>
+            <DataAllValuesFrom>
+                <DataProperty IRI="#dennaCena"/>
+                <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxExclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#KratkodobyPrenajom"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Prenajom"/>
+            <DataAllValuesFrom>
+                <DataProperty IRI="#pocetDni"/>
+                <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxExclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#LuxusneAuto"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Auto"/>
+            <DataAllValuesFrom>
+                <DataProperty IRI="#dennaCena"/>
+                <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">150</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PremioveAuto"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Auto"/>
+            <DataAllValuesFrom>
+                <DataProperty IRI="#dennaCena"/>
+                <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">80</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxExclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">150</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PrenajomOsobnehoAuta"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Prenajom"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#maAuto"/>
+                <Class IRI="#OsobneAuto"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PrenajomUzitkovehoAuta"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Prenajom"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#maAuto"/>
+                <Class IRI="#UzitkoveAuto"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#StrednaTrieda"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Auto"/>
+            <DataAllValuesFrom>
+                <DataProperty IRI="#dennaCena"/>
+                <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxExclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">80</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#StrednodobyPrenajom"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Prenajom"/>
+            <DataAllValuesFrom>
+                <DataProperty IRI="#pocetDni"/>
+                <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxExclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Auto"/>
+        <ObjectUnionOf>
+            <Class IRI="#EkonomickeAuto"/>
+            <Class IRI="#LuxusneAuto"/>
+            <Class IRI="#PremioveAuto"/>
+            <Class IRI="#StrednaTrieda"/>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Auto"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#patriPobocke"/>
+            <Class IRI="#Pobocka"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Auto"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#patriPobocke"/>
+            <Class IRI="#Pobocka"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BMWRad3Sedan"/>
+        <Class IRI="#Sedan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BratislavskaLetiskovaPobocka"/>
+        <Class IRI="#LetiskovaPobocka"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BratislavskaMestskaPobocka"/>
+        <Class IRI="#MestskaPobocka"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DlhodobyPrenajom"/>
+        <Class IRI="#Prenajom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dodavka"/>
+        <Class IRI="#UzitkoveAuto"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DvojdnovyPrenajom"/>
+        <Class IRI="#KratkodobyPrenajom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EkonomickeAuto"/>
+        <Class IRI="#Auto"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FiremnyZakaznik"/>
+        <Class IRI="#Zakaznik"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FordTransitDodavka"/>
+        <Class IRI="#Dodavka"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hatchback"/>
+        <Class IRI="#OsobneAuto"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kombi"/>
+        <Class IRI="#OsobneAuto"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KosickaMestskaPobocka"/>
+        <Class IRI="#MestskaPobocka"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KratkodobyPrenajom"/>
+        <Class IRI="#Prenajom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LetiskovaPobocka"/>
+        <Class IRI="#Pobocka"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LuxusneAuto"/>
+        <Class IRI="#Auto"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MercedesBenzTriedaS"/>
+        <Class IRI="#Sedan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MestskaPobocka"/>
+        <Class IRI="#Pobocka"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Minibus"/>
+        <Class IRI="#UzitkoveAuto"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OsobneAuto"/>
+        <Class IRI="#Auto"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pobocka"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#jeMiestoVratenia"/>
+            <Class IRI="#Prenajom"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pobocka"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#jeMiestoVyzdvihnutia"/>
+            <Class IRI="#Prenajom"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pobocka"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#spravujeAuto"/>
+            <Class IRI="#Auto"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PremioveAuto"/>
+        <Class IRI="#Auto"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prenajom"/>
+        <ObjectUnionOf>
+            <Class IRI="#DlhodobyPrenajom"/>
+            <Class IRI="#KratkodobyPrenajom"/>
+            <Class IRI="#StrednodobyPrenajom"/>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prenajom"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#maAuto"/>
+            <Class IRI="#Auto"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prenajom"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#maZakaznika"/>
+            <Class IRI="#Zakaznik"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prenajom"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#vratenieNa"/>
+            <Class IRI="#Pobocka"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prenajom"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#vyzdvihnutieNa"/>
+            <Class IRI="#Pobocka"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prenajom"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#maAuto"/>
+            <Class IRI="#Auto"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prenajom"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#maZakaznika"/>
+            <Class IRI="#Zakaznik"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prenajom"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#vratenieNa"/>
+            <Class IRI="#Pobocka"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prenajom"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#vyzdvihnutieNa"/>
+            <Class IRI="#Pobocka"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrenajomOsobnehoAuta"/>
+        <Class IRI="#Prenajom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrenajomOsobnehoAuta"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#maAuto"/>
+            <Class IRI="#OsobneAuto"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrenajomUzitkovehoAuta"/>
+        <Class IRI="#Prenajom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrenajomUzitkovehoAuta"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#maAuto"/>
+            <Class IRI="#UzitkoveAuto"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SUV"/>
+        <Class IRI="#OsobneAuto"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sedan"/>
+        <Class IRI="#OsobneAuto"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SkodaFabia"/>
+        <Class IRI="#Hatchback"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SkodaOctaviaCombi"/>
+        <Class IRI="#Kombi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SportoveAuto"/>
+        <Class IRI="#OsobneAuto"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StrednaTrieda"/>
+        <Class IRI="#Auto"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StrednodobyPrenajom"/>
+        <Class IRI="#Prenajom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SukromnyZakaznik"/>
+        <Class IRI="#Zakaznik"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UzitkoveAuto"/>
+        <Class IRI="#Auto"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VolkswagenGolf"/>
+        <Class IRI="#Hatchback"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Zakaznik"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#maPrenajom"/>
+            <Class IRI="#Prenajom"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Auto"/>
+        <Class IRI="#Pobocka"/>
+        <Class IRI="#Prenajom"/>
+        <Class IRI="#Zakaznik"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BMWRad3Sedan"/>
+        <Class IRI="#FordTransitDodavka"/>
+        <Class IRI="#MercedesBenzTriedaS"/>
+        <Class IRI="#SkodaFabia"/>
+        <Class IRI="#SkodaOctaviaCombi"/>
+        <Class IRI="#VolkswagenGolf"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BratislavskaMestskaPobocka"/>
+        <Class IRI="#KosickaMestskaPobocka"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DlhodobyPrenajom"/>
+        <Class IRI="#KratkodobyPrenajom"/>
+        <Class IRI="#StrednodobyPrenajom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Dodavka"/>
+        <Class IRI="#Minibus"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EkonomickeAuto"/>
+        <Class IRI="#LuxusneAuto"/>
+        <Class IRI="#PremioveAuto"/>
+        <Class IRI="#StrednaTrieda"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#FiremnyZakaznik"/>
+        <Class IRI="#SukromnyZakaznik"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Hatchback"/>
+        <Class IRI="#Kombi"/>
+        <Class IRI="#SUV"/>
+        <Class IRI="#Sedan"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LetiskovaPobocka"/>
+        <Class IRI="#MestskaPobocka"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#OsobneAuto"/>
+        <Class IRI="#UzitkoveAuto"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PrenajomOsobnehoAuta"/>
+        <Class IRI="#PrenajomUzitkovehoAuta"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#BMWRad3Sedan"/>
+        <NamedIndividual IRI="#Auto_BMW3_01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SkodaFabia"/>
+        <NamedIndividual IRI="#Auto_Fabia_01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VolkswagenGolf"/>
+        <NamedIndividual IRI="#Auto_Golf_01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MercedesBenzTriedaS"/>
+        <NamedIndividual IRI="#Auto_MercedesS_01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SkodaOctaviaCombi"/>
+        <NamedIndividual IRI="#Auto_Octavia_01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FordTransitDodavka"/>
+        <NamedIndividual IRI="#Auto_Transit_01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SukromnyZakaznik"/>
+        <NamedIndividual IRI="#EvaKovacova"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FiremnyZakaznik"/>
+        <NamedIndividual IRI="#FirmaABC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SukromnyZakaznik"/>
+        <NamedIndividual IRI="#JanNovak"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BratislavskaMestskaPobocka"/>
+        <NamedIndividual IRI="#Pobocka_BA_Centrum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BratislavskaLetiskovaPobocka"/>
+        <NamedIndividual IRI="#Pobocka_BA_Letisko"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KosickaMestskaPobocka"/>
+        <NamedIndividual IRI="#Pobocka_KE_Centrum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Prenajom"/>
+        <NamedIndividual IRI="#Prenajom_001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Prenajom"/>
+        <NamedIndividual IRI="#Prenajom_002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Prenajom"/>
+        <NamedIndividual IRI="#Prenajom_003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Prenajom"/>
+        <NamedIndividual IRI="#Prenajom_004"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Auto_BMW3_01"/>
+        <NamedIndividual IRI="#Auto_Fabia_01"/>
+        <NamedIndividual IRI="#Auto_Golf_01"/>
+        <NamedIndividual IRI="#Auto_MercedesS_01"/>
+        <NamedIndividual IRI="#Auto_Octavia_01"/>
+        <NamedIndividual IRI="#Auto_Transit_01"/>
+        <NamedIndividual IRI="#EvaKovacova"/>
+        <NamedIndividual IRI="#FirmaABC"/>
+        <NamedIndividual IRI="#JanNovak"/>
+        <NamedIndividual IRI="#Pobocka_BA_Centrum"/>
+        <NamedIndividual IRI="#Pobocka_BA_Letisko"/>
+        <NamedIndividual IRI="#Pobocka_KE_Centrum"/>
+        <NamedIndividual IRI="#Prenajom_001"/>
+        <NamedIndividual IRI="#Prenajom_002"/>
+        <NamedIndividual IRI="#Prenajom_003"/>
+        <NamedIndividual IRI="#Prenajom_004"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#patriPobocke"/>
+        <NamedIndividual IRI="#Auto_BMW3_01"/>
+        <NamedIndividual IRI="#Pobocka_BA_Letisko"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#patriPobocke"/>
+        <NamedIndividual IRI="#Auto_Fabia_01"/>
+        <NamedIndividual IRI="#Pobocka_BA_Centrum"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#patriPobocke"/>
+        <NamedIndividual IRI="#Auto_Golf_01"/>
+        <NamedIndividual IRI="#Pobocka_KE_Centrum"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#patriPobocke"/>
+        <NamedIndividual IRI="#Auto_MercedesS_01"/>
+        <NamedIndividual IRI="#Pobocka_BA_Letisko"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#patriPobocke"/>
+        <NamedIndividual IRI="#Auto_Octavia_01"/>
+        <NamedIndividual IRI="#Pobocka_BA_Centrum"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#patriPobocke"/>
+        <NamedIndividual IRI="#Auto_Transit_01"/>
+        <NamedIndividual IRI="#Pobocka_KE_Centrum"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#maAuto"/>
+        <NamedIndividual IRI="#Prenajom_001"/>
+        <NamedIndividual IRI="#Auto_Fabia_01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#maZakaznika"/>
+        <NamedIndividual IRI="#Prenajom_001"/>
+        <NamedIndividual IRI="#JanNovak"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#vratenieNa"/>
+        <NamedIndividual IRI="#Prenajom_001"/>
+        <NamedIndividual IRI="#Pobocka_BA_Centrum"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#vyzdvihnutieNa"/>
+        <NamedIndividual IRI="#Prenajom_001"/>
+        <NamedIndividual IRI="#Pobocka_BA_Centrum"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#maAuto"/>
+        <NamedIndividual IRI="#Prenajom_002"/>
+        <NamedIndividual IRI="#Auto_BMW3_01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#maZakaznika"/>
+        <NamedIndividual IRI="#Prenajom_002"/>
+        <NamedIndividual IRI="#EvaKovacova"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#vratenieNa"/>
+        <NamedIndividual IRI="#Prenajom_002"/>
+        <NamedIndividual IRI="#Pobocka_BA_Centrum"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#vyzdvihnutieNa"/>
+        <NamedIndividual IRI="#Prenajom_002"/>
+        <NamedIndividual IRI="#Pobocka_BA_Letisko"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#maAuto"/>
+        <NamedIndividual IRI="#Prenajom_003"/>
+        <NamedIndividual IRI="#Auto_Transit_01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#maZakaznika"/>
+        <NamedIndividual IRI="#Prenajom_003"/>
+        <NamedIndividual IRI="#FirmaABC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#vratenieNa"/>
+        <NamedIndividual IRI="#Prenajom_003"/>
+        <NamedIndividual IRI="#Pobocka_KE_Centrum"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#vyzdvihnutieNa"/>
+        <NamedIndividual IRI="#Prenajom_003"/>
+        <NamedIndividual IRI="#Pobocka_KE_Centrum"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#maAuto"/>
+        <NamedIndividual IRI="#Prenajom_004"/>
+        <NamedIndividual IRI="#Auto_Octavia_01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#maZakaznika"/>
+        <NamedIndividual IRI="#Prenajom_004"/>
+        <NamedIndividual IRI="#JanNovak"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#vratenieNa"/>
+        <NamedIndividual IRI="#Prenajom_004"/>
+        <NamedIndividual IRI="#Pobocka_BA_Letisko"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#vyzdvihnutieNa"/>
+        <NamedIndividual IRI="#Prenajom_004"/>
+        <NamedIndividual IRI="#Pobocka_BA_Centrum"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dennaCena"/>
+        <NamedIndividual IRI="#Auto_BMW3_01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">95.00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dennaCena"/>
+        <NamedIndividual IRI="#Auto_Fabia_01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">25.00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dennaCena"/>
+        <NamedIndividual IRI="#Auto_Golf_01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">45.00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dennaCena"/>
+        <NamedIndividual IRI="#Auto_MercedesS_01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">180.00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dennaCena"/>
+        <NamedIndividual IRI="#Auto_Octavia_01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">55.00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dennaCena"/>
+        <NamedIndividual IRI="#Auto_Transit_01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">60.00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#pocetDni"/>
+        <NamedIndividual IRI="#Prenajom_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#pocetDni"/>
+        <NamedIndividual IRI="#Prenajom_002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#pocetDni"/>
+        <NamedIndividual IRI="#Prenajom_003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#pocetDni"/>
+        <NamedIndividual IRI="#Prenajom_004"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#jeMiestoVratenia"/>
+        <ObjectProperty IRI="#vratenieNa"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#jeMiestoVyzdvihnutia"/>
+        <ObjectProperty IRI="#vyzdvihnutieNa"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#jePrenajateV"/>
+        <ObjectProperty IRI="#maAuto"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#maPrenajom"/>
+        <ObjectProperty IRI="#maZakaznika"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#patriPobocke"/>
+        <ObjectProperty IRI="#spravujeAuto"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#maAuto"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#maZakaznika"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#patriPobocke"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#vratenieNa"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#vyzdvihnutieNa"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#jeMiestoVratenia"/>
+        <Class IRI="#Pobocka"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#jeMiestoVyzdvihnutia"/>
+        <Class IRI="#Pobocka"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#jePrenajateV"/>
+        <Class IRI="#Auto"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#maAuto"/>
+        <Class IRI="#Prenajom"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#maPrenajom"/>
+        <Class IRI="#Zakaznik"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#maZakaznika"/>
+        <Class IRI="#Prenajom"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#patriPobocke"/>
+        <Class IRI="#Auto"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#spravujeAuto"/>
+        <Class IRI="#Pobocka"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#vratenieNa"/>
+        <Class IRI="#Prenajom"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#vyzdvihnutieNa"/>
+        <Class IRI="#Prenajom"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#jeMiestoVratenia"/>
+        <Class IRI="#Prenajom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#jeMiestoVyzdvihnutia"/>
+        <Class IRI="#Prenajom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#jePrenajateV"/>
+        <Class IRI="#Prenajom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#maAuto"/>
+        <Class IRI="#Auto"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#maPrenajom"/>
+        <Class IRI="#Prenajom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#maZakaznika"/>
+        <Class IRI="#Zakaznik"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#patriPobocke"/>
+        <Class IRI="#Pobocka"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#spravujeAuto"/>
+        <Class IRI="#Auto"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#vratenieNa"/>
+        <Class IRI="#Pobocka"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#vyzdvihnutieNa"/>
+        <Class IRI="#Pobocka"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#dennaCena"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#pocetDni"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dennaCena"/>
+        <Class IRI="#Auto"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pocetDni"/>
+        <Class IRI="#Prenajom"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#dennaCena"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pocetDni"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Auto</IRI>
+        <Literal xml:lang="sk">Auto</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Auto_BMW3_01</IRI>
+        <Literal xml:lang="sk">Auto BMW3 01</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Auto_Fabia_01</IRI>
+        <Literal xml:lang="sk">Auto Fabia 01</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Auto_Golf_01</IRI>
+        <Literal xml:lang="sk">Auto Golf 01</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Auto_MercedesS_01</IRI>
+        <Literal xml:lang="sk">Auto MercedesS 01</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Auto_Octavia_01</IRI>
+        <Literal xml:lang="sk">Auto Octavia 01</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Auto_Transit_01</IRI>
+        <Literal xml:lang="sk">Auto Transit 01</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BMWRad3Sedan</IRI>
+        <Literal xml:lang="sk">BMW radu 3 Sedan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BratislavskaLetiskovaPobocka</IRI>
+        <Literal xml:lang="sk">Bratislavská letisková pobočka</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BratislavskaMestskaPobocka</IRI>
+        <Literal xml:lang="sk">Bratislavská mestská pobočka</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DlhodobyPrenajom</IRI>
+        <Literal xml:lang="sk">Prenájom na 30 a viac dní.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DlhodobyPrenajom</IRI>
+        <Literal xml:lang="sk">Dlhodobý prenájom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Dodavka</IRI>
+        <Literal xml:lang="sk">Dodávka</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DvojdnovyPrenajom</IRI>
+        <Literal xml:lang="sk">Dvojdňový prenájom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EkonomickeAuto</IRI>
+        <Literal xml:lang="sk">Auto s dennou cenou od 0 EUR vrátane a menej ako 40 EUR.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EkonomickeAuto</IRI>
+        <Literal xml:lang="sk">Ekonomické auto</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EvaKovacova</IRI>
+        <Literal xml:lang="sk">Eva Kováčová</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FiremnyZakaznik</IRI>
+        <Literal xml:lang="sk">Firemný zákazník</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FirmaABC</IRI>
+        <Literal xml:lang="sk">Firma ABC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FordTransitDodavka</IRI>
+        <Literal xml:lang="sk">Ford Transit – dodávka</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hatchback</IRI>
+        <Literal xml:lang="sk">Hatchback</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#JanNovak</IRI>
+        <Literal xml:lang="sk">Ján Novák</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Kombi</IRI>
+        <Literal xml:lang="sk">Kombi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#KosickaMestskaPobocka</IRI>
+        <Literal xml:lang="sk">Košická mestská pobočka</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KratkodobyPrenajom</IRI>
+        <Literal xml:lang="sk">Prenájom na 1 až 6 dní.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#KratkodobyPrenajom</IRI>
+        <Literal xml:lang="sk">Krátkodobý prenájom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LetiskovaPobocka</IRI>
+        <Literal xml:lang="sk">Letisková pobočka</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LuxusneAuto</IRI>
+        <Literal xml:lang="sk">Auto s dennou cenou od 150 EUR vrátane a viac.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LuxusneAuto</IRI>
+        <Literal xml:lang="sk">Luxusné auto</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MercedesBenzTriedaS</IRI>
+        <Literal xml:lang="sk">Mercedes-Benz triedy S</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MestskaPobocka</IRI>
+        <Literal xml:lang="sk">Mestská pobočka</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Minibus</IRI>
+        <Literal xml:lang="sk">Minibus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OsobneAuto</IRI>
+        <Literal xml:lang="sk">Osobné auto</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Pobocka</IRI>
+        <Literal xml:lang="sk">Pobočka</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Pobocka_BA_Centrum</IRI>
+        <Literal xml:lang="sk">Pobočka Bratislava centrum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Pobocka_BA_Letisko</IRI>
+        <Literal xml:lang="sk">Pobočka Bratislava letisko</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Pobocka_KE_Centrum</IRI>
+        <Literal xml:lang="sk">Pobočka Košice centrum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PremioveAuto</IRI>
+        <Literal xml:lang="sk">Auto s dennou cenou od 80 EUR vrátane a menej ako 150 EUR.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PremioveAuto</IRI>
+        <Literal xml:lang="sk">Prémiové auto</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Prenajom</IRI>
+        <Literal xml:lang="sk">Prenájom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PrenajomOsobnehoAuta</IRI>
+        <Literal xml:lang="sk">Prenájom osobného auta</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PrenajomUzitkovehoAuta</IRI>
+        <Literal xml:lang="sk">Prenájom úžitkového auta</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Prenajom_001</IRI>
+        <Literal xml:lang="sk">Prenajom 001</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Prenajom_002</IRI>
+        <Literal xml:lang="sk">Prenajom 002</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Prenajom_003</IRI>
+        <Literal xml:lang="sk">Prenajom 003</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Prenajom_004</IRI>
+        <Literal xml:lang="sk">Prenajom 004</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SUV</IRI>
+        <Literal xml:lang="sk">SUV</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sedan</IRI>
+        <Literal xml:lang="sk">Sedan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SkodaFabia</IRI>
+        <Literal xml:lang="sk">Škoda Fabia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SkodaOctaviaCombi</IRI>
+        <Literal xml:lang="sk">Škoda Octavia Combi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SportoveAuto</IRI>
+        <Literal xml:lang="sk">Športové auto</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#StrednaTrieda</IRI>
+        <Literal xml:lang="sk">Auto s dennou cenou od 40 EUR vrátane a menej ako 80 EUR.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#StrednaTrieda</IRI>
+        <Literal xml:lang="sk">Auto strednej cenovej triedy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#StrednodobyPrenajom</IRI>
+        <Literal xml:lang="sk">Prenájom na 7 až 29 dní.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#StrednodobyPrenajom</IRI>
+        <Literal xml:lang="sk">Strednodobý prenájom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SukromnyZakaznik</IRI>
+        <Literal xml:lang="sk">Súkromný zákazník</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UzitkoveAuto</IRI>
+        <Literal xml:lang="sk">Úžitkové auto</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VolkswagenGolf</IRI>
+        <Literal xml:lang="sk">Volkswagen Golf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Zakaznik</IRI>
+        <Literal xml:lang="sk">Zákazník</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dennaCena</IRI>
+        <Literal xml:lang="sk">Jedna denná sadzba za auto v EUR; príklady sú fiktívne.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#dennaCena</IRI>
+        <Literal xml:lang="sk">denná cena v EUR</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#jeMiestoVratenia</IRI>
+        <Literal xml:lang="sk">je miesto vrátenia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#jeMiestoVyzdvihnutia</IRI>
+        <Literal xml:lang="sk">je miesto vyzdvihnutia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#jePrenajateV</IRI>
+        <Literal xml:lang="sk">je prenajaté v</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#maAuto</IRI>
+        <Literal xml:lang="sk">má auto</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#maPrenajom</IRI>
+        <Literal xml:lang="sk">má prenájom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#maZakaznika</IRI>
+        <Literal xml:lang="sk">má zákazníka</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#patriPobocke</IRI>
+        <Literal xml:lang="sk">patrí pobočke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#pocetDni</IRI>
+        <Literal xml:lang="sk">Kladný celý počet dní prenájmu.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#pocetDni</IRI>
+        <Literal xml:lang="sk">počet dní prenájmu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#spravujeAuto</IRI>
+        <Literal xml:lang="sk">spravuje auto</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#vratenieNa</IRI>
+        <Literal xml:lang="sk">vrátenie na pobočke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#vyzdvihnutieNa</IRI>
+        <Literal xml:lang="sk">vyzdvihnutie na pobočke</Literal>
+    </AnnotationAssertion>
+    <SubClassOf><Class IRI="#Auto"/><DataMinCardinality cardinality="1"><DataProperty IRI="#dennaCena"/></DataMinCardinality></SubClassOf><SubClassOf><Class IRI="#Prenajom"/><DataMinCardinality cardinality="1"><DataProperty IRI="#pocetDni"/></DataMinCardinality></SubClassOf></Ontology>

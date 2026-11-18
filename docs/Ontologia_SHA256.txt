@@ -1,0 +1,1 @@
+132fc5a76f438025bc3c7b9a16cf3c60d47f443496e68d16d805eab55b7c3e21  data/ontology/autopozicovna_web_v1_4.owl

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#142b3e">
+  <title>Motor Rent · Lokálny RAG</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar" aria-label="Navigácia">
+      <div class="brand">
+        <img src="/favicon.svg" alt="" width="43" height="43">
+        <div><strong>Motor Rent</strong><span>Lokálny asistent</span></div>
+      </div>
+      <div class="side-section">
+        <p class="side-label">PRACOVNÝ PRIESTOR</p>
+        <nav>
+          <button type="button" class="nav active" id="nav-chat" aria-current="page">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H5l1.7-3.1A7.5 7.5 0 1 1 20 11.5Z"/><path d="M9 11.5h7M9 8.5h4"/></svg>
+            Asistent
+          </button>
+          <button type="button" class="nav" id="nav-sources">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="4" width="14" height="16" rx="2"/><path d="M9 9h6m-6 4h6m-6 4h4"/></svg>
+            Zdroje
+          </button>
+        </nav>
+      </div>
+      <div class="rail-index">
+        <p class="side-label">ZNALOSTNÁ BÁZA</p>
+        <div><span>Dokumenty PDF</span><b id="count-pdf">–</b></div>
+        <div><span>Ontológia OWL</span><b id="count-owl">–</b></div>
+        <div><span>Indexované úryvky</span><b id="count-chunks">–</b></div>
+      </div>
+      <footer class="rail-foot">
+        <span class="rail-foot-dot"></span>
+        <div><strong>Zadanie 03</strong><span>Výučbová simulácia</span></div>
+      </footer>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <div><span class="eyebrow">AUTOPOŽIČOVŇA / RAG</span><h1 id="view-title">Asistent</h1></div>
+        <div id="runtime" class="status checking" role="status"><span></span><b>Pripájam sa</b></div>
+      </header>
+
+      <section class="pane" id="chat-pane" aria-label="Asistent">
+        <div class="thread">
+          <div id="intro">
+            <section class="hero">
+              <div class="hero-copy">
+                <p class="eyebrow">OTÁZKY NAD VLASTNÝMI ZDROJMI</p>
+                <h2>Spýtaj sa<br>na prenájom.</h2>
+                <p>Podmienky, ceny a modelové prenájmy. Odpovede vychádzajú z príručiek autopožičovne a z ontológie.</p>
+              </div>
+              <svg class="hero-art" viewBox="0 0 350 238" aria-hidden="true">
+                <defs><pattern id="grid" width="22" height="22" patternUnits="userSpaceOnUse"><path d="M22 0H0V22" fill="none" stroke="#bedadd" stroke-opacity=".12"/></pattern></defs>
+                <rect width="350" height="238" fill="url(#grid)"/>
+                <path d="M106 76H186Q207 76 207 97V119H261M119 173H186Q207 173 207 152V119" stroke="#76bfac" stroke-width="1.7" stroke-dasharray="4 6" fill="none"/>
+                <rect x="38" y="35" width="99" height="77" rx="12" fill="#1e4052" stroke="#547c86"/>
+                <rect x="46" y="44" width="99" height="77" rx="12" fill="#2c5262" stroke="#6a9396"/>
+                <rect x="54" y="53" width="99" height="77" rx="12" fill="#eaf5f1"/>
+                <path d="M73 73h24l8 8v30H73zM97 73v9h8m-24 9h16m-16 7h16" fill="none" stroke="#14715d" stroke-width="1.7" stroke-linejoin="round"/>
+                <text x="115" y="96" fill="#14715d" font-size="10" font-family="sans-serif" font-weight="bold">PDF</text>
+                <rect x="71" y="146" width="110" height="56" rx="12" fill="#284f61" stroke="#688f92"/>
+                <path d="M93 175l13-11 13 11-13 11zm13-11v22" fill="none" stroke="#a9e2cf" stroke-width="1.4"/>
+                <circle cx="93" cy="175" r="3" fill="#a9e2cf"/><circle cx="106" cy="164" r="3" fill="#a9e2cf"/><circle cx="119" cy="175" r="3" fill="#a9e2cf"/><circle cx="106" cy="186" r="3" fill="#a9e2cf"/>
+                <text x="135" y="179" fill="#e2f5eb" font-size="11" font-family="sans-serif" font-weight="bold">OWL</text>
+                <circle cx="275" cy="119" r="39" fill="#173343" stroke="#7bbaa9"/>
+                <circle cx="275" cy="119" r="30" fill="#1e604f"/>
+                <path d="M261 118l9 9 18-18" fill="none" stroke="#e5fff4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="207" cy="119" r="5" fill="#a9e2cf"/>
+              </svg>
+            </section>
+            <div class="example-heading"><h3>Vyskúšaj otázku</h3><span>3 ukážky</span></div>
+            <div class="examples">
+              <button type="button" class="example" data-question="Koľko stojí balík Plus na deň a aká je s ním spoluúčasť pri oprávnenom poškodení?">
+                <span class="tag">PDF</span><strong>Koľko stojí balík Plus?</strong><small>Poistenie a spoluúčasť</small><span class="arrow" aria-hidden="true">↗</span>
+              </button>
+              <button type="button" class="example" data-question="Koľko dní trvá Prenajom_002 a do akej triedy podľa dĺžky patrí?">
+                <span class="tag owl">OWL</span><strong>Ako dlho trvá Prenajom_002?</strong><small>Záznam a trieda prenájmu</small><span class="arrow" aria-hidden="true">↗</span>
+              </button>
+              <button type="button" class="example" data-question="Akú dennú cenu má Auto_BMW3_01 a aká záloha sa blokuje pre jeho cenovú triedu?">
+                <span class="tag combo">PDF + OWL</span><strong>Koľko stojí BMW a jeho záloha?</strong><small>Cena z OWL, záloha z PDF</small><span class="arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </div>
+          <div id="messages" role="log" aria-live="polite" aria-label="Otázky a odpovede"></div>
+        </div>
+        <div class="composer-wrap">
+          <form class="composer" id="ask-form">
+            <label for="question" class="sr-only">Otázka pre asistenta</label>
+            <textarea id="question" rows="2" maxlength="500" placeholder="Napíš otázku o prenájme auta…" required></textarea>
+            <button type="submit" class="send" id="send" aria-label="Odoslať otázku">
+              <span>Odoslať</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 14-7-4 14-3-6-7-1Z"/><path d="m12 13 7-8"/></svg>
+            </button>
+          </form>
+          <div class="composer-footer">
+            <div class="preferences">
+              <button type="button" id="settings-toggle" class="link-button" aria-expanded="false" aria-controls="settings">Nastavenia</button>
+              <span>·</span><span id="retrieval-label">Hybridné vyhľadávanie</span>
+            </div>
+            <button type="button" id="clear" class="link-button" hidden>Nová konverzácia</button>
+          </div>
+          <div id="settings" class="settings" hidden>
+            <label>Vyhľadávanie <select id="mode"><option value="hybrid">Hybridné</option><option value="lexical">BM25 (podľa slov)</option></select></label>
+            <label>Zdroje <select id="scope"><option value="all">PDF aj OWL</option><option value="pdf">Iba PDF</option><option value="owl">Iba OWL</option></select></label>
+            <label class="check"><input type="checkbox" id="generate" checked> Formulovať odpoveď modelom</label>
+          </div>
+        </div>
+      </section>
+
+      <section class="pane sources-pane" id="sources-pane" aria-label="Zdroje" hidden>
+        <div class="section-head">
+          <div><p class="eyebrow">KORPUS</p><h2>Dokumenty a ontológia</h2><p>Desať fiktívnych príručiek a pôvodná ontológia z prvého zadania.</p></div>
+          <button type="button" class="outline" id="reindex">Preindexovať zdroje</button>
+        </div>
+        <div id="index-note" class="index-note" role="status"></div>
+        <div class="source-table" id="source-list"></div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,1843 @@
+{
+  "environment": {
+    "platform": "Linux x86_64",
+    "python": "3.12.14",
+    "ollama": "0.40.16"
+  },
+  "corpus": {
+    "pdf_count": 10,
+    "page_count": 20,
+    "owl_count": 1,
+    "chunk_count": 85,
+    "owl_counts": {
+      "classes": 36,
+      "objects": 10,
+      "data": 2,
+      "individuals": 16
+    },
+    "warnings": []
+  },
+  "models": {
+    "chat": "qwen3:4b-instruct-2507-q4_K_M",
+    "embedding": "qwen3-embedding:0.6b"
+  },
+  "retrieval": {
+    "lexical": {
+      "metrics": {
+        "queries": 15,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "all_gold_at_5": 1,
+        "recall_at_5": 1.0,
+        "precision_at_5": 0.22666666666666668
+      },
+      "rows": [
+        {
+          "id": "P01",
+          "gold": [
+            [
+              "01_rezervacie.pdf",
+              1
+            ]
+          ],
+          "ranked": [
+            [
+              "01_rezervacie.pdf",
+              1
+            ],
+            [
+              "09_zahranicie_a_prislusenstvo.pdf",
+              2
+            ],
+            [
+              "10_firemne_prenajmy_a_faktury.pdf",
+              1
+            ],
+            [
+              "01_rezervacie.pdf",
+              2
+            ],
+            [
+              "08_storno_a_predlzenie.pdf",
+              1
+            ]
+          ],
+          "cosines": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "id": "P02",
+          "gold": [
+            [
+              "02_podmienky.pdf",
+              1
+            ]
+          ],
+          "ranked": [
+            [
+              "02_podmienky.pdf",
+              1
+            ],
+            [
+              "02_podmienky.pdf",
+              2
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "OsobneAuto"
+            ],
+            [
+              "10_firemne_prenajmy_a_faktury.pdf",
+              1
+            ],
+            [
+              "01_rezervacie.pdf",
+              2
+            ]
+          ],
+          "cosines": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "id": "P03",
+          "gold": [
+            [
+              "03_cennik_a_zalohy.pdf",
+              2
+            ]
+          ],
+          "ranked": [
+            [
+              "03_cennik_a_zalohy.pdf",
+              2
+            ],
+            [
+              "10_firemne_prenajmy_a_faktury.pdf",
+              2
+            ],
+            [
+              "06_palivo_a_kilometre.pdf",
+              1
+            ],
+            [
+              "03_cennik_a_zalohy.pdf",
+              1
+            ],
+            [
+              "09_zahranicie_a_prislusenstvo.pdf",
+              2
+            ]
+          ],
+          "cosines": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "id": "P04",
+          "gold": [
+            [
+              "04_prevzatie_a_vratenie.pdf",
+              2
+            ]
+          ],
+          "ranked": [
+            [
+              "04_prevzatie_a_vratenie.pdf",
+              2
+            ],
+            [
+              "01_rezervacie.pdf",
+              1
+            ],
+            [
+              "06_palivo_a_kilometre.pdf",
+              1
+            ],
+            [
+              "08_storno_a_predlzenie.pdf",
+              1
+            ],
+            [
+              "05_poistenie_a_poskodenie.pdf",
+              2
+            ]
+          ],
+          "cosines": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "id": "P05",
+          "gold": [
+            [
+              "05_poistenie_a_poskodenie.pdf",
+              1
+            ]
+          ],
+          "ranked": [
+            [
+              "05_poistenie_a_poskodenie.pdf",
+              1
+            ],
+            [
+              "02_podmienky.pdf",
+              2
+            ],
+            [
+              "05_poistenie_a_poskodenie.pdf",
+              2
+            ],
+            [
+              "09_zahranicie_a_prislusenstvo.pdf",
+              2
+            ],
+            [
+              "06_palivo_a_kilometre.pdf",
+              2
+            ]
+          ],
+          "cosines": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "id": "P06",
+          "gold": [
+            [
+              "06_palivo_a_kilometre.pdf",
+              1
+            ]
+          ],
+          "ranked": [
+            [
+              "06_palivo_a_kilometre.pdf",
+              1
+            ],
+            [
+              "01_rezervacie.pdf",
+              1
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "OsobneAuto"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "UzitkoveAuto"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "LuxusneAuto"
+            ]
+          ],
+          "cosines": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "id": "P07",
+          "gold": [
+            [
+              "07_pobocky_a_jednosmerny_prenajom.pdf",
+              1
+            ]
+          ],
+          "ranked": [
+            [
+              "07_pobocky_a_jednosmerny_prenajom.pdf",
+              1
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Pobocka_KE_Centrum"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Prenajom_003"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto_Golf_01"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto_Transit_01"
+            ]
+          ],
+          "cosines": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "id": "P08",
+          "gold": [
+            [
+              "08_storno_a_predlzenie.pdf",
+              1
+            ]
+          ],
+          "ranked": [
+            [
+              "08_storno_a_predlzenie.pdf",
+              1
+            ],
+            [
+              "01_rezervacie.pdf",
+              2
+            ],
+            [
+              "08_storno_a_predlzenie.pdf",
+              2
+            ],
+            [
+              "09_zahranicie_a_prislusenstvo.pdf",
+              1
+            ],
+            [
+              "04_prevzatie_a_vratenie.pdf",
+              2
+            ]
+          ],
+          "cosines": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "id": "P09",
+          "gold": [
+            [
+              "09_zahranicie_a_prislusenstvo.pdf",
+              1
+            ]
+          ],
+          "ranked": [
+            [
+              "09_zahranicie_a_prislusenstvo.pdf",
+              1
+            ],
+            [
+              "08_storno_a_predlzenie.pdf",
+              1
+            ],
+            [
+              "04_prevzatie_a_vratenie.pdf",
+              2
+            ],
+            [
+              "07_pobocky_a_jednosmerny_prenajom.pdf",
+              2
+            ],
+            [
+              "08_storno_a_predlzenie.pdf",
+              2
+            ]
+          ],
+          "cosines": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "id": "P10",
+          "gold": [
+            [
+              "10_firemne_prenajmy_a_faktury.pdf",
+              2
+            ]
+          ],
+          "ranked": [
+            [
+              "10_firemne_prenajmy_a_faktury.pdf",
+              2
+            ],
+            [
+              "03_cennik_a_zalohy.pdf",
+              2
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "FirmaABC"
+            ],
+            [
+              "04_prevzatie_a_vratenie.pdf",
+              1
+            ],
+            [
+              "10_firemne_prenajmy_a_faktury.pdf",
+              1
+            ]
+          ],
+          "cosines": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "id": "O01",
+          "gold": [
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Prenajom_002"
+            ]
+          ],
+          "ranked": [
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Prenajom_002"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto_BMW3_01"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Pobocka_BA_Letisko"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Pobocka_BA_Centrum"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto"
+            ]
+          ],
+          "cosines": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "id": "O02",
+          "gold": [
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto_Golf_01"
+            ]
+          ],
+          "ranked": [
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto_Golf_01"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Pobocka_KE_Centrum"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto_MercedesS_01"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto_BMW3_01"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto_Fabia_01"
+            ]
+          ],
+          "cosines": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "id": "O03",
+          "gold": [
+            [
+              "autopozicovna_web_v1_4.owl",
+              "PremioveAuto"
+            ]
+          ],
+          "ranked": [
+            [
+              "autopozicovna_web_v1_4.owl",
+              "PremioveAuto"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "StrednaTrieda"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "EkonomickeAuto"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "LuxusneAuto"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto_Golf_01"
+            ]
+          ],
+          "cosines": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "id": "K01",
+          "gold": [
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto_BMW3_01"
+            ],
+            [
+              "03_cennik_a_zalohy.pdf",
+              1
+            ]
+          ],
+          "ranked": [
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto_BMW3_01"
+            ],
+            [
+              "03_cennik_a_zalohy.pdf",
+              1
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Pobocka_BA_Letisko"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto_Golf_01"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Prenajom_002"
+            ]
+          ],
+          "cosines": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "id": "K02",
+          "gold": [
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Prenajom_002"
+            ],
+            [
+              "07_pobocky_a_jednosmerny_prenajom.pdf",
+              2
+            ]
+          ],
+          "ranked": [
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Prenajom_002"
+            ],
+            [
+              "07_pobocky_a_jednosmerny_prenajom.pdf",
+              2
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Pobocka_BA_Centrum"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Pobocka_BA_Letisko"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Prenajom_003"
+            ]
+          ],
+          "cosines": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "id": "N01",
+          "gold": [],
+          "ranked": [],
+          "cosines": []
+        },
+        {
+          "id": "N02",
+          "gold": [],
+          "ranked": [
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto_Golf_01"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Pobocka_KE_Centrum"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto_MercedesS_01"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto_BMW3_01"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto_Fabia_01"
+            ]
+          ],
+          "cosines": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "id": "N03",
+          "gold": [],
+          "ranked": [
+            [
+              "06_palivo_a_kilometre.pdf",
+              2
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "pocetDni"
+            ],
+            [
+              "08_storno_a_predlzenie.pdf",
+              2
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Prenajom_002"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Prenajom_003"
+            ]
+          ],
+          "cosines": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    "hybrid": {
+      "metrics": {
+        "queries": 15,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "all_gold_at_5": 1,
+        "recall_at_5": 1.0,
+        "precision_at_5": 0.22666666666666668
+      },
+      "rows": [
+        {
+          "id": "P01",
+          "gold": [
+            [
+              "01_rezervacie.pdf",
+              1
+            ]
+          ],
+          "ranked": [
+            [
+              "01_rezervacie.pdf",
+              1
+            ],
+            [
+              "01_rezervacie.pdf",
+              2
+            ],
+            [
+              "10_firemne_prenajmy_a_faktury.pdf",
+              1
+            ],
+            [
+              "08_storno_a_predlzenie.pdf",
+              1
+            ],
+            [
+              "09_zahranicie_a_prislusenstvo.pdf",
+              2
+            ]
+          ],
+          "cosines": [
+            0.7433,
+            0.633,
+            0.5389,
+            0.6269,
+            0.5251
+          ]
+        },
+        {
+          "id": "P02",
+          "gold": [
+            [
+              "02_podmienky.pdf",
+              1
+            ]
+          ],
+          "ranked": [
+            [
+              "02_podmienky.pdf",
+              1
+            ],
+            [
+              "02_podmienky.pdf",
+              2
+            ],
+            [
+              "01_rezervacie.pdf",
+              2
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "PrenajomOsobnehoAuta"
+            ],
+            [
+              "01_rezervacie.pdf",
+              1
+            ]
+          ],
+          "cosines": [
+            0.7703,
+            0.6028,
+            0.5658,
+            0.5093,
+            0.5963
+          ]
+        },
+        {
+          "id": "P03",
+          "gold": [
+            [
+              "03_cennik_a_zalohy.pdf",
+              2
+            ]
+          ],
+          "ranked": [
+            [
+              "03_cennik_a_zalohy.pdf",
+              2
+            ],
+            [
+              "03_cennik_a_zalohy.pdf",
+              1
+            ],
+            [
+              "06_palivo_a_kilometre.pdf",
+              1
+            ],
+            [
+              "04_prevzatie_a_vratenie.pdf",
+              2
+            ],
+            [
+              "01_rezervacie.pdf",
+              2
+            ]
+          ],
+          "cosines": [
+            0.7005,
+            0.5427,
+            0.5156,
+            0.5711,
+            0.5428
+          ]
+        },
+        {
+          "id": "P04",
+          "gold": [
+            [
+              "04_prevzatie_a_vratenie.pdf",
+              2
+            ]
+          ],
+          "ranked": [
+            [
+              "04_prevzatie_a_vratenie.pdf",
+              2
+            ],
+            [
+              "01_rezervacie.pdf",
+              1
+            ],
+            [
+              "08_storno_a_predlzenie.pdf",
+              1
+            ],
+            [
+              "08_storno_a_predlzenie.pdf",
+              2
+            ],
+            [
+              "06_palivo_a_kilometre.pdf",
+              1
+            ]
+          ],
+          "cosines": [
+            0.7317,
+            0.5984,
+            0.6294,
+            0.6336,
+            0.5615
+          ]
+        },
+        {
+          "id": "P05",
+          "gold": [
+            [
+              "05_poistenie_a_poskodenie.pdf",
+              1
+            ]
+          ],
+          "ranked": [
+            [
+              "05_poistenie_a_poskodenie.pdf",
+              1
+            ],
+            [
+              "02_podmienky.pdf",
+              2
+            ],
+            [
+              "09_zahranicie_a_prislusenstvo.pdf",
+              2
+            ],
+            [
+              "03_cennik_a_zalohy.pdf",
+              1
+            ],
+            [
+              "06_palivo_a_kilometre.pdf",
+              2
+            ]
+          ],
+          "cosines": [
+            0.8034,
+            0.5591,
+            0.5691,
+            0.5586,
+            0.5263
+          ]
+        },
+        {
+          "id": "P06",
+          "gold": [
+            [
+              "06_palivo_a_kilometre.pdf",
+              1
+            ]
+          ],
+          "ranked": [
+            [
+              "06_palivo_a_kilometre.pdf",
+              1
+            ],
+            [
+              "01_rezervacie.pdf",
+              1
+            ],
+            [
+              "04_prevzatie_a_vratenie.pdf",
+              2
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "OsobneAuto"
+            ],
+            [
+              "08_storno_a_predlzenie.pdf",
+              1
+            ]
+          ],
+          "cosines": [
+            0.675,
+            0.4953,
+            0.606,
+            0.292,
+            0.5191
+          ]
+        },
+        {
+          "id": "P07",
+          "gold": [
+            [
+              "07_pobocky_a_jednosmerny_prenajom.pdf",
+              1
+            ]
+          ],
+          "ranked": [
+            [
+              "07_pobocky_a_jednosmerny_prenajom.pdf",
+              1
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Pobocka_KE_Centrum"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Pobocka_BA_Centrum"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto_Transit_01"
+            ],
+            [
+              "07_pobocky_a_jednosmerny_prenajom.pdf",
+              2
+            ]
+          ],
+          "cosines": [
+            0.7265,
+            0.6806,
+            0.5638,
+            0.5156,
+            0.5343
+          ]
+        },
+        {
+          "id": "P08",
+          "gold": [
+            [
+              "08_storno_a_predlzenie.pdf",
+              1
+            ]
+          ],
+          "ranked": [
+            [
+              "08_storno_a_predlzenie.pdf",
+              1
+            ],
+            [
+              "01_rezervacie.pdf",
+              2
+            ],
+            [
+              "08_storno_a_predlzenie.pdf",
+              2
+            ],
+            [
+              "01_rezervacie.pdf",
+              1
+            ],
+            [
+              "04_prevzatie_a_vratenie.pdf",
+              2
+            ]
+          ],
+          "cosines": [
+            0.8344,
+            0.6739,
+            0.6067,
+            0.65,
+            0.5932
+          ]
+        },
+        {
+          "id": "P09",
+          "gold": [
+            [
+              "09_zahranicie_a_prislusenstvo.pdf",
+              1
+            ]
+          ],
+          "ranked": [
+            [
+              "09_zahranicie_a_prislusenstvo.pdf",
+              1
+            ],
+            [
+              "07_pobocky_a_jednosmerny_prenajom.pdf",
+              2
+            ],
+            [
+              "04_prevzatie_a_vratenie.pdf",
+              2
+            ],
+            [
+              "09_zahranicie_a_prislusenstvo.pdf",
+              2
+            ],
+            [
+              "08_storno_a_predlzenie.pdf",
+              1
+            ]
+          ],
+          "cosines": [
+            0.7966,
+            0.5508,
+            0.5168,
+            0.5442,
+            0.4881
+          ]
+        },
+        {
+          "id": "P10",
+          "gold": [
+            [
+              "10_firemne_prenajmy_a_faktury.pdf",
+              2
+            ]
+          ],
+          "ranked": [
+            [
+              "10_firemne_prenajmy_a_faktury.pdf",
+              2
+            ],
+            [
+              "03_cennik_a_zalohy.pdf",
+              2
+            ],
+            [
+              "10_firemne_prenajmy_a_faktury.pdf",
+              1
+            ],
+            [
+              "04_prevzatie_a_vratenie.pdf",
+              2
+            ],
+            [
+              "01_rezervacie.pdf",
+              1
+            ]
+          ],
+          "cosines": [
+            0.7321,
+            0.5521,
+            0.636,
+            0.5616,
+            0.5507
+          ]
+        },
+        {
+          "id": "O01",
+          "gold": [
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Prenajom_002"
+            ]
+          ],
+          "ranked": [
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Prenajom_002"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Prenajom"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Prenajom_003"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "KratkodobyPrenajom"
+            ]
+          ],
+          "cosines": [
+            0.7547,
+            0.7072,
+            0.7164,
+            0.5495,
+            0.6951
+          ]
+        },
+        {
+          "id": "O02",
+          "gold": [
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto_Golf_01"
+            ]
+          ],
+          "ranked": [
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto_Golf_01"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto_MercedesS_01"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto_Octavia_01"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto_Transit_01"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto_BMW3_01"
+            ]
+          ],
+          "cosines": [
+            0.8175,
+            0.5743,
+            0.6165,
+            0.616,
+            0.5651
+          ]
+        },
+        {
+          "id": "O03",
+          "gold": [
+            [
+              "autopozicovna_web_v1_4.owl",
+              "PremioveAuto"
+            ]
+          ],
+          "ranked": [
+            [
+              "autopozicovna_web_v1_4.owl",
+              "PremioveAuto"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "StrednaTrieda"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "EkonomickeAuto"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto_Octavia_01"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto"
+            ]
+          ],
+          "cosines": [
+            0.6222,
+            0.6658,
+            0.6129,
+            0.6305,
+            0.6945
+          ]
+        },
+        {
+          "id": "K01",
+          "gold": [
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto_BMW3_01"
+            ],
+            [
+              "03_cennik_a_zalohy.pdf",
+              1
+            ]
+          ],
+          "ranked": [
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto_BMW3_01"
+            ],
+            [
+              "03_cennik_a_zalohy.pdf",
+              1
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Prenajom_002"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto_Golf_01"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto_MercedesS_01"
+            ]
+          ],
+          "cosines": [
+            0.8006,
+            0.6694,
+            0.5995,
+            0.5788,
+            0.6402
+          ]
+        },
+        {
+          "id": "K02",
+          "gold": [
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Prenajom_002"
+            ],
+            [
+              "07_pobocky_a_jednosmerny_prenajom.pdf",
+              2
+            ]
+          ],
+          "ranked": [
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Prenajom_002"
+            ],
+            [
+              "07_pobocky_a_jednosmerny_prenajom.pdf",
+              2
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Prenajom_003"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Prenajom_001"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Prenajom_004"
+            ]
+          ],
+          "cosines": [
+            0.7424,
+            0.65,
+            0.723,
+            0.7103,
+            0.656
+          ]
+        },
+        {
+          "id": "N01",
+          "gold": [],
+          "ranked": [],
+          "cosines": []
+        },
+        {
+          "id": "N02",
+          "gold": [],
+          "ranked": [
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto_Golf_01"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto_MercedesS_01"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto_BMW3_01"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "VolkswagenGolf"
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Auto_Octavia_01"
+            ]
+          ],
+          "cosines": [
+            0.7653,
+            0.5372,
+            0.5176,
+            0.5456,
+            0.5193
+          ]
+        },
+        {
+          "id": "N03",
+          "gold": [],
+          "ranked": [
+            [
+              "06_palivo_a_kilometre.pdf",
+              2
+            ],
+            [
+              "03_cennik_a_zalohy.pdf",
+              1
+            ],
+            [
+              "autopozicovna_web_v1_4.owl",
+              "Prenajom_001"
+            ],
+            [
+              "03_cennik_a_zalohy.pdf",
+              2
+            ],
+            [
+              "05_poistenie_a_poskodenie.pdf",
+              1
+            ]
+          ],
+          "cosines": [
+            0.6349,
+            0.6278,
+            0.5101,
+            0.5104,
+            0.5069
+          ]
+        }
+      ]
+    }
+  },
+  "generation": [
+    {
+      "id": "P01",
+      "question": "Ako dlho sa podrží nepotvrdená online rezervácia?",
+      "gold": [
+        [
+          "01_rezervacie.pdf",
+          1
+        ]
+      ],
+      "match": [
+        "\\b90\\b"
+      ],
+      "expected": "90 minút",
+      "kind": "rag",
+      "answer": "Nepotvrdená online rezervácia sa podrží 90 minút.",
+      "cited": [
+        [
+          "01_rezervacie.pdf",
+          1
+        ]
+      ],
+      "facts_ok": true,
+      "passed": true,
+      "ms": 19764,
+      "retrieval_ms": 147,
+      "warning": null
+    },
+    {
+      "id": "P02",
+      "question": "Aký minimálny vek a akú dĺžku držby vodičského preukazu potrebuje vodič na bežné osobné auto?",
+      "gold": [
+        [
+          "02_podmienky.pdf",
+          1
+        ]
+      ],
+      "match": [
+        "\\b21\\b",
+        "\\b2\\b|dva roky"
+      ],
+      "expected": "Aspoň 21 rokov a vodičský preukaz aspoň 2 roky",
+      "kind": "rag",
+      "answer": "Vodič musí mať aspoň 21 rokov a platný vodičský preukaz aspoň 2 roky.",
+      "cited": [
+        [
+          "02_podmienky.pdf",
+          1
+        ]
+      ],
+      "facts_ok": true,
+      "passed": true,
+      "ms": 17043,
+      "retrieval_ms": 274,
+      "warning": null
+    },
+    {
+      "id": "P03",
+      "question": "Do koľkých pracovných dní mi po podpise vratného protokolu uvoľnia zálohu, ak nič nedlhujem?",
+      "gold": [
+        [
+          "03_cennik_a_zalohy.pdf",
+          2
+        ]
+      ],
+      "match": [
+        "\\b5\\b|piat",
+        "pracovn"
+      ],
+      "expected": "Najneskôr do 5 pracovných dní, ak nie sú nezúčtované položky",
+      "kind": "rag",
+      "answer": "Do 5 pracovných dní.",
+      "cited": [
+        [
+          "03_cennik_a_zalohy.pdf",
+          2
+        ]
+      ],
+      "facts_ok": true,
+      "passed": true,
+      "ms": 13779,
+      "retrieval_ms": 276,
+      "warning": null
+    },
+    {
+      "id": "P04",
+      "question": "Vrátim vozidlo o 70 minút neskôr. Aký je poplatok za toto meškanie?",
+      "gold": [
+        [
+          "04_prevzatie_a_vratenie.pdf",
+          2
+        ]
+      ],
+      "match": [
+        "\\b20\\b"
+      ],
+      "expected": "Jednorazovo 20 EUR",
+      "kind": "rag",
+      "answer": "Poplatok za meškanie o 70 minút je 20 EUR. Pri meškaní od 31 do 120 minút sa účtuje jednorazovo 20 EUR.",
+      "cited": [
+        [
+          "04_prevzatie_a_vratenie.pdf",
+          2
+        ]
+      ],
+      "facts_ok": true,
+      "passed": true,
+      "ms": 18195,
+      "retrieval_ms": 211,
+      "warning": null
+    },
+    {
+      "id": "P05",
+      "question": "Koľko stojí balík Plus na deň a aká je s ním spoluúčasť pri oprávnenom poškodení?",
+      "gold": [
+        [
+          "05_poistenie_a_poskodenie.pdf",
+          1
+        ]
+      ],
+      "match": [
+        "\\b12\\b",
+        "\\b200\\b"
+      ],
+      "expected": "12 EUR/deň; spoluúčasť 200 EUR",
+      "kind": "rag",
+      "answer": "Balík Plus stojí 12 EUR za deň. Pri oprávnenom poškodení sa spoluúčasť znižuje na 200 EUR pri osobnom aj úžitkovom aute.",
+      "cited": [
+        [
+          "05_poistenie_a_poskodenie.pdf",
+          1
+        ]
+      ],
+      "facts_ok": true,
+      "passed": true,
+      "ms": 19691,
+      "retrieval_ms": 214,
+      "warning": null
+    },
+    {
+      "id": "P06",
+      "question": "Čo zaplatím, keď vrátim auto s nedotankovanou nádržou?",
+      "gold": [
+        [
+          "06_palivo_a_kilometre.pdf",
+          1
+        ]
+      ],
+      "match": [
+        "\\b15\\b",
+        "paliv"
+      ],
+      "expected": "Cena doplneného paliva a servisný paušál 15 EUR",
+      "kind": "rag",
+      "answer": "Zaplatíte cenu skutočne doplneného paliva a servisný paušál 15 EUR. Dopĺňanie paliva sa vyúčtuje ako samostatná položka a nejde o poplatok za kilometre ani o denný nájom.",
+      "cited": [
+        [
+          "06_palivo_a_kilometre.pdf",
+          1
+        ]
+      ],
+      "facts_ok": true,
+      "passed": true,
+      "ms": 19623,
+      "retrieval_ms": 180,
+      "warning": null
+    },
+    {
+      "id": "P07",
+      "question": "Kedy je v sobotu otvorená pobočka Košice centrum?",
+      "gold": [
+        [
+          "07_pobocky_a_jednosmerny_prenajom.pdf",
+          1
+        ]
+      ],
+      "match": [
+        "\\b0?9[:.]00\\b",
+        "\\b13[:.]00\\b"
+      ],
+      "expected": "09:00 až 13:00",
+      "kind": "rag",
+      "answer": "V sobotu je pobočka Košice centrum otvorená od 09:00 do 13:00.",
+      "cited": [
+        [
+          "07_pobocky_a_jednosmerny_prenajom.pdf",
+          1
+        ]
+      ],
+      "facts_ok": true,
+      "passed": true,
+      "ms": 17516,
+      "retrieval_ms": 193,
+      "warning": null
+    },
+    {
+      "id": "P08",
+      "question": "Zruším rezerváciu 30 hodín pred prevzatím. Koľko stojí storno?",
+      "gold": [
+        [
+          "08_storno_a_predlzenie.pdf",
+          1
+        ]
+      ],
+      "match": [
+        "\\b20\\b"
+      ],
+      "expected": "20 EUR",
+      "kind": "rag",
+      "answer": "20 EUR",
+      "cited": [
+        [
+          "08_storno_a_predlzenie.pdf",
+          1
+        ]
+      ],
+      "facts_ok": true,
+      "passed": true,
+      "ms": 13061,
+      "retrieval_ms": 143,
+      "warning": null
+    },
+    {
+      "id": "P09",
+      "question": "Aký predstih a poplatok má písomné povolenie na výjazd do Rakúska?",
+      "gold": [
+        [
+          "09_zahranicie_a_prislusenstvo.pdf",
+          1
+        ]
+      ],
+      "match": [
+        "\\b24\\b",
+        "\\b22\\b"
+      ],
+      "expected": "Aspoň 24 hodín pred prevzatím; 22 EUR za prenájom",
+      "kind": "rag",
+      "answer": "Písomné povolenie na výjazd do Rakúska má predstih najmenej 24 hodín pred prevzatím vozidla. Poplatok za schválený výjazd je 22 EUR jednorazovo, bez ohľadu na počet krajín. Povolenie sa vzťahuje iba na krajiny uvedené v potvrdení, a pre Rakúsko je to povolené v školskom modeli.",
+      "cited": [
+        [
+          "09_zahranicie_a_prislusenstvo.pdf",
+          1
+        ]
+      ],
+      "facts_ok": true,
+      "passed": true,
+      "ms": 24847,
+      "retrieval_ms": 201,
+      "warning": null
+    },
+    {
+      "id": "P10",
+      "question": "Za aký čas od podpísania vratného protokolu dostane firma elektronickú faktúru?",
+      "gold": [
+        [
+          "10_firemne_prenajmy_a_faktury.pdf",
+          2
+        ]
+      ],
+      "match": [
+        "\\b2\\b|dvoch",
+        "pracovn"
+      ],
+      "expected": "Do 2 pracovných dní",
+      "kind": "rag",
+      "answer": "Firma dostane elektronickú faktúru do 2 pracovných dní od podpísania vratného protokolu.",
+      "cited": [
+        [
+          "10_firemne_prenajmy_a_faktury.pdf",
+          2
+        ]
+      ],
+      "facts_ok": true,
+      "passed": true,
+      "ms": 17305,
+      "retrieval_ms": 247,
+      "warning": null
+    },
+    {
+      "id": "O01",
+      "question": "Koľko dní trvá Prenajom_002 a do akej triedy podľa dĺžky patrí?",
+      "gold": [
+        [
+          "autopozicovna_web_v1_4.owl",
+          "Prenajom_002"
+        ]
+      ],
+      "match": [
+        "\\b10\\b",
+        "strednodob"
+      ],
+      "expected": "10 dní; strednodobý prenájom",
+      "kind": "rag",
+      "answer": "Prenajom_002 trvá 10 dní a patrí do triedy StrednodobyPrenajom.",
+      "cited": [
+        [
+          "autopozicovna_web_v1_4.owl",
+          "Prenajom_002"
+        ]
+      ],
+      "facts_ok": true,
+      "passed": true,
+      "ms": 14837,
+      "retrieval_ms": 197,
+      "warning": null
+    },
+    {
+      "id": "O02",
+      "question": "Aká je denná cena Auto_Golf_01 a ktorá pobočka ho spravuje?",
+      "gold": [
+        [
+          "autopozicovna_web_v1_4.owl",
+          "Auto_Golf_01"
+        ]
+      ],
+      "match": [
+        "\\b45\\b",
+        "kosic",
+        "centrum"
+      ],
+      "expected": "45 EUR/deň; Košice centrum",
+      "kind": "rag",
+      "answer": "Denná cena Auto_Golf_01 je 45,00 EUR/deň a patrí pobočke Pobocka_KE_Centrum.",
+      "cited": [
+        [
+          "autopozicovna_web_v1_4.owl",
+          "Auto_Golf_01"
+        ]
+      ],
+      "facts_ok": false,
+      "passed": false,
+      "ms": 9764,
+      "retrieval_ms": 187,
+      "warning": null
+    },
+    {
+      "id": "O03",
+      "question": "Do akej cenovej triedy patrí v ontológii auto s dennou cenou presne 80 EUR?",
+      "gold": [
+        [
+          "autopozicovna_web_v1_4.owl",
+          "PremioveAuto"
+        ]
+      ],
+      "match": [
+        "premiov"
+      ],
+      "expected": "Prémiové auto; dolná hranica 80 EUR je vrátane",
+      "kind": "rag",
+      "answer": "PremioveAuto",
+      "cited": [
+        [
+          "autopozicovna_web_v1_4.owl",
+          "PremioveAuto"
+        ]
+      ],
+      "facts_ok": true,
+      "passed": true,
+      "ms": 6542,
+      "retrieval_ms": 214,
+      "warning": null
+    },
+    {
+      "id": "K01",
+      "question": "Akú dennú cenu má Auto_BMW3_01 a aká záloha sa blokuje pre jeho cenovú triedu?",
+      "gold": [
+        [
+          "autopozicovna_web_v1_4.owl",
+          "Auto_BMW3_01"
+        ],
+        [
+          "03_cennik_a_zalohy.pdf",
+          1
+        ]
+      ],
+      "match": [
+        "\\b95\\b",
+        "\\b700\\b"
+      ],
+      "expected": "95 EUR/deň a záloha 700 EUR (prémiové auto)",
+      "kind": "rag",
+      "answer": "Auto_BMW3_01 má dennú cenu 95,00 EUR/deň. Pre jeho cenovú triedu (prémiové auto) sa blokuje záloha výšky 700 EUR.",
+      "cited": [
+        [
+          "03_cennik_a_zalohy.pdf",
+          1
+        ],
+        [
+          "autopozicovna_web_v1_4.owl",
+          "Auto_BMW3_01"
+        ]
+      ],
+      "facts_ok": true,
+      "passed": true,
+      "ms": 14917,
+      "retrieval_ms": 241,
+      "warning": null
+    },
+    {
+      "id": "K02",
+      "question": "Kde sa vyzdvihuje a vracia Prenajom_002 a koľko stojí jednosmerné vrátenie medzi týmito pobočkami?",
+      "gold": [
+        [
+          "autopozicovna_web_v1_4.owl",
+          "Prenajom_002"
+        ],
+        [
+          "07_pobocky_a_jednosmerny_prenajom.pdf",
+          2
+        ]
+      ],
+      "match": [
+        "letisk",
+        "centrum|centre",
+        "\\b18\\b"
+      ],
+      "expected": "Prevzatie Bratislava letisko, vrátenie Bratislava centrum, 18 EUR",
+      "kind": "rag",
+      "answer": "Prenajom_002 sa vyzdvihuje na Pobocka_BA_Letisko a vráti na Pobocka_BA_Centrum. Jednosmerné vrátenie medzi týmito pobočkami stojí 18 EUR.",
+      "cited": [
+        [
+          "07_pobocky_a_jednosmerny_prenajom.pdf",
+          2
+        ],
+        [
+          "autopozicovna_web_v1_4.owl",
+          "Prenajom_002"
+        ]
+      ],
+      "facts_ok": true,
+      "passed": true,
+      "ms": 15449,
+      "retrieval_ms": 253,
+      "warning": null
+    },
+    {
+      "id": "N01",
+      "question": "Ako upiecť banánový chlieb?",
+      "gold": [],
+      "match": [],
+      "expected": "Odmietnutie, v zdrojoch nie je recept",
+      "kind": "insufficient",
+      "answer": "V dostupných zdrojoch som nenašiel dostatok informácií na spoľahlivú odpoveď.",
+      "cited": [],
+      "facts_ok": null,
+      "passed": true,
+      "ms": 153,
+      "retrieval_ms": 153,
+      "warning": null
+    },
+    {
+      "id": "N02",
+      "question": "Akú farbu má Auto_Golf_01?",
+      "gold": [],
+      "match": [],
+      "expected": "Odmietnutie, farba auta nie je uvedená",
+      "kind": "insufficient",
+      "answer": "V dostupných zdrojoch som nenašiel dostatok informácií na spoľahlivú odpoveď.",
+      "cited": [],
+      "facts_ok": null,
+      "passed": true,
+      "ms": 3825,
+      "retrieval_ms": 126,
+      "warning": null
+    },
+    {
+      "id": "N03",
+      "question": "Je v cene prenájmu automaticky zahrnutá diaľničná známka?",
+      "gold": [],
+      "match": [],
+      "expected": "Odmietnutie, v zdrojoch nie je informácia o diaľničnej známke",
+      "kind": "excerpts",
+      "answer": "Tu sú najrelevantnejšie výňatky zo zdrojov.",
+      "cited": [],
+      "facts_ok": null,
+      "passed": false,
+      "ms": 15344,
+      "retrieval_ms": 222,
+      "warning": "Citácie modelu neukazujú na použité výňatky."
+    }
+  ],
+  "generation_summary": {
+    "positive_passed": 14,
+    "positive_total": 15,
+    "negative_passed": 2,
+    "negative_total": 3,
+    "median_ms": 15396
+  },
+  "manual_review": {
+    "O02": "Správna denná cena aj pobočka. Model použil presný identifikátor Pobocka_KE_Centrum namiesto názvu Košice centrum očakávaného automatickou kontrolou.",
+    "P10": "Správna lehota 2 pracovné dni; PDF garantuje odoslanie elektronickej faktúry, nie čas jej doručenia.",
+    "N03": "Model nedal platnú podloženú odpoveď. Aplikácia zobrazila iba výňatky; automatická kontrola očakávala výslovné odmietnutie."
+  }
+}

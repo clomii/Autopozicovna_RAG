@@ -1,0 +1,20 @@
+[
+  {"id":"P01","question":"Ako dlho sa podrží nepotvrdená online rezervácia?","gold":[["01_rezervacie.pdf",1]],"match":["\\b90\\b"],"expected":"90 minút"},
+  {"id":"P02","question":"Aký minimálny vek a akú dĺžku držby vodičského preukazu potrebuje vodič na bežné osobné auto?","gold":[["02_podmienky.pdf",1]],"match":["\\b21\\b","\\b2\\b|dva roky"],"expected":"Aspoň 21 rokov a vodičský preukaz aspoň 2 roky"},
+  {"id":"P03","question":"Do koľkých pracovných dní mi po podpise vratného protokolu uvoľnia zálohu, ak nič nedlhujem?","gold":[["03_cennik_a_zalohy.pdf",2]],"match":["\\b5\\b|piat","pracovn"],"expected":"Najneskôr do 5 pracovných dní, ak nie sú nezúčtované položky"},
+  {"id":"P04","question":"Vrátim vozidlo o 70 minút neskôr. Aký je poplatok za toto meškanie?","gold":[["04_prevzatie_a_vratenie.pdf",2]],"match":["\\b20\\b"],"expected":"Jednorazovo 20 EUR"},
+  {"id":"P05","question":"Koľko stojí balík Plus na deň a aká je s ním spoluúčasť pri oprávnenom poškodení?","gold":[["05_poistenie_a_poskodenie.pdf",1]],"match":["\\b12\\b","\\b200\\b"],"expected":"12 EUR/deň; spoluúčasť 200 EUR"},
+  {"id":"P06","question":"Čo zaplatím, keď vrátim auto s nedotankovanou nádržou?","gold":[["06_palivo_a_kilometre.pdf",1]],"match":["\\b15\\b","paliv"],"expected":"Cena doplneného paliva a servisný paušál 15 EUR"},
+  {"id":"P07","question":"Kedy je v sobotu otvorená pobočka Košice centrum?","gold":[["07_pobocky_a_jednosmerny_prenajom.pdf",1]],"match":["\\b0?9[:.]00\\b","\\b13[:.]00\\b"],"expected":"09:00 až 13:00"},
+  {"id":"P08","question":"Zruším rezerváciu 30 hodín pred prevzatím. Koľko stojí storno?","gold":[["08_storno_a_predlzenie.pdf",1]],"match":["\\b20\\b"],"expected":"20 EUR"},
+  {"id":"P09","question":"Aký predstih a poplatok má písomné povolenie na výjazd do Rakúska?","gold":[["09_zahranicie_a_prislusenstvo.pdf",1]],"match":["\\b24\\b","\\b22\\b"],"expected":"Aspoň 24 hodín pred prevzatím; 22 EUR za prenájom"},
+  {"id":"P10","question":"Za aký čas od podpísania vratného protokolu dostane firma elektronickú faktúru?","gold":[["10_firemne_prenajmy_a_faktury.pdf",2]],"match":["\\b2\\b|dvoch","pracovn"],"expected":"Do 2 pracovných dní"},
+  {"id":"O01","question":"Koľko dní trvá Prenajom_002 a do akej triedy podľa dĺžky patrí?","gold":[["autopozicovna_web_v1_4.owl","Prenajom_002"]],"match":["\\b10\\b","strednodob"],"expected":"10 dní; strednodobý prenájom"},
+  {"id":"O02","question":"Aká je denná cena Auto_Golf_01 a ktorá pobočka ho spravuje?","gold":[["autopozicovna_web_v1_4.owl","Auto_Golf_01"]],"match":["\\b45\\b","kosic","centrum"],"expected":"45 EUR/deň; Košice centrum"},
+  {"id":"O03","question":"Do akej cenovej triedy patrí v ontológii auto s dennou cenou presne 80 EUR?","gold":[["autopozicovna_web_v1_4.owl","PremioveAuto"]],"match":["premiov"],"expected":"Prémiové auto; dolná hranica 80 EUR je vrátane"},
+  {"id":"K01","question":"Akú dennú cenu má Auto_BMW3_01 a aká záloha sa blokuje pre jeho cenovú triedu?","gold":[["autopozicovna_web_v1_4.owl","Auto_BMW3_01"],["03_cennik_a_zalohy.pdf",1]],"match":["\\b95\\b","\\b700\\b"],"expected":"95 EUR/deň a záloha 700 EUR (prémiové auto)"},
+  {"id":"K02","question":"Kde sa vyzdvihuje a vracia Prenajom_002 a koľko stojí jednosmerné vrátenie medzi týmito pobočkami?","gold":[["autopozicovna_web_v1_4.owl","Prenajom_002"],["07_pobocky_a_jednosmerny_prenajom.pdf",2]],"match":["letisk","centrum|centre","\\b18\\b"],"expected":"Prevzatie Bratislava letisko, vrátenie Bratislava centrum, 18 EUR"},
+  {"id":"N01","question":"Ako upiecť banánový chlieb?","gold":[],"match":[],"expected":"Odmietnutie, v zdrojoch nie je recept"},
+  {"id":"N02","question":"Akú farbu má Auto_Golf_01?","gold":[],"match":[],"expected":"Odmietnutie, farba auta nie je uvedená"},
+  {"id":"N03","question":"Je v cene prenájmu automaticky zahrnutá diaľničná známka?","gold":[],"match":[],"expected":"Odmietnutie, v zdrojoch nie je informácia o diaľničnej známke"}
+]

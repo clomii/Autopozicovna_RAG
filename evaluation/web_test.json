@@ -1,0 +1,18 @@
+{
+  "ollama": "0.40.16",
+  "question": "Akú dennú cenu má Auto_BMW3_01 a aká záloha sa blokuje pre jeho cenovú triedu?",
+  "answer": "Auto_BMW3_01 má dennú cenu 95,00 EUR/deň. Pre jeho cenovú triedu (prémiové auto) sa blokuje záloha výšky 700 EUR.",
+  "retrieval": "hybrid",
+  "cited": [
+    [
+      "autopozicovna_web_v1_4.owl",
+      "Auto_BMW3_01"
+    ],
+    [
+      "03_cennik_a_zalohy.pdf",
+      "str. 1"
+    ]
+  ],
+  "owl_scope_ok": true,
+  "source_links_ok": true
+}
